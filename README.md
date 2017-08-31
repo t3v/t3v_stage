@@ -53,6 +53,15 @@ This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this s
 Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
 immediately yanked and / or a new version should be immediately released that restores compatibility.
 
+Credits
+-------
+
+### Icons
+
+* [Picture free icon]
+
+Icons made by [Madebyoliver] from [Flaticon] is licensed by [CC 3.0 BY].
+
 License
 -------
 
@@ -60,11 +69,15 @@ T3v Stage is released under the [MIT License (MIT)], see [LICENSE].
 
 [Acceptance testing TYPO3]: https://wiki.typo3.org/Acceptance_testing "Acceptance testing TYPO3"
 [Automated testing TYPO3]: https://wiki.typo3.org/Automated_testing "Automated testing TYPO3"
+[CC 3.0 BY]: http://creativecommons.org/licenses/by/3.0/ "Creative Commons BY 3.0"
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
+[Flaticon]: http://www.flaticon.com "Flaticon"
 [Functional testing TYPO3]: https://wiki.typo3.org/Functional_testing "Functional testing TYPO3"
 [here]: https://github.com/t3v/t3v_stage/issues "GitHub Issue Tracker"
 [LICENSE]: https://raw.githubusercontent.com/t3v/t3v_stage/master/LICENSE "License"
+[Madebyoliver]: http://www.flaticon.com/authors/madebyoliver "Madebyoliver"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
+[Picture free icon]: https://www.flaticon.com/free-icon/picture_148711 "Picture free icon"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [T3v Stage]: https://t3v.github.io/t3v_stage/ "The stage extension of TYPO3Voila."
 [Travis CI Status]: https://img.shields.io/travis/t3v/t3v_stage.svg?style=flat "Travis CI Status"

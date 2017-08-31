@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file product-name="t3v_stage" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- === Models === -->
+
+      <!-- Slide -->
+
+      <trans-unit id="tx_t3vstage_domain_model_slide">
+        <source>Slide</source>
+        <target>Slide</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.title">
+        <source>Title</source>
+        <target>Titel</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.header">
+        <source>Header</source>
+        <target>Kopfzeile</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.image">
+        <source>Image</source>
+        <target>Bild</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

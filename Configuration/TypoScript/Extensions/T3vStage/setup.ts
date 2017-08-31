@@ -8,6 +8,19 @@ plugin {
       updateReferenceIndex = 1
 
       # storagePid = {$plugin.tx_t3vstage.persistence.storagePid}
+
+      classes {
+        T3v\T3vStage\Domain\Model\Slide {
+          mapping {
+            tableName = tx_t3vstage_domain_model_slide
+
+            # columns {
+            #   foo.mapOnProperty = foo
+            #   bar.mapOnProperty = bar
+            # }
+          }
+        }
+      }
     }
 
     view {
