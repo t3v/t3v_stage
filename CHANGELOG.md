@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Implemented `Slider` content element
 * Implemented `Slide` model
 * Added common files
 

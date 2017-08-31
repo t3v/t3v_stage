@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>1</langChildren>
+  </meta>
+
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.sheetTitle</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.slides>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.slides.label</label>
+              <config type="array">
+                <type>inline</type>
+                <foreign_table>tx_t3vstage_domain_model_slide</foreign_table>
+                <minitems>1</minitems>
+                <maxitems>10</maxitems>
+                <appearance type="array">
+                  <expandSingle>0</expandSingle>
+                  <levelLinksPosition>top</levelLinksPosition>
+                  <showSynchronizationLink>0</showSynchronizationLink>
+                  <showAllLocalizationLink>0</showAllLocalizationLink>
+                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
+                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
+                </appearance>
+                <behaviour type="array">
+                  <localizationMode>select</localizationMode>
+                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
+                  <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
+                  <enableCascadingDelete>1</enableCascadingDelete>
+                </behaviour>
+              </config>
+            </TCEforms>
+          </settings.slides>
+
+          <settings.layout>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.label</label>
+              <config type="array">
+                <type>select</type>
+                <size>1</size>
+                <minitems>1</minitems>
+                <maxitems>1</maxitems>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.small.label</numIndex>
+                    <numIndex index="1">small</numIndex>
+                  </numIndex>
+
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.medium.label</numIndex>
+                    <numIndex index="1">medium</numIndex>
+                  </numIndex>
+
+                  <numIndex index="3" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.large.label</numIndex>
+                    <numIndex index="1">large</numIndex>
+                  </numIndex>
+
+                  <numIndex index="4" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.custom.label</numIndex>
+                    <numIndex index="1">custom</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </settings.layout>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>
