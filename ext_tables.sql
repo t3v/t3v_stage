@@ -7,6 +7,7 @@ CREATE TABLE tx_t3vstage_domain_model_slide (
   header text NOT NULL,
   abstract text NOT NULL,
   image int(11) unsigned DEFAULT '0' NOT NULL,
+  link varchar(255) DEFAULT '' NOT NULL,
 
   tstamp int(11) unsigned DEFAULT '0' NOT NULL,
   crdate int(11) unsigned DEFAULT '0' NOT NULL,

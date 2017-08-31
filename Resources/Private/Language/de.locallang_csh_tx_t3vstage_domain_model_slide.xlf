@@ -23,6 +23,11 @@
         <source>Image</source>
         <target>Bild</target>
       </trans-unit>
+
+      <trans-unit id="link.description">
+        <source>Link</source>
+        <target>Link</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

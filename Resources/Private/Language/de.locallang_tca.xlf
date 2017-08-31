@@ -32,6 +32,11 @@
         <source>Image</source>
         <target>Bild</target>
       </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.link">
+        <source>Link</source>
+        <target>Link</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -75,6 +75,34 @@ return [
       'exclude' => true
     ],
 
+    'link' => [
+      'label' => $lll . 'tx_t3vstage_domain_model_slide.link',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim',
+        'wizards' => [
+          'link' => [
+            'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
+            'type' => 'popup',
+            'icon' => 'actions-wizard-link',
+            'module' => [
+              'name' => 'wizard_link'
+            ],
+            'params' => [
+              'blindLinkOptions' => 'folder, file, mail, spec',
+              'blindLinkFields' => 'class, params'
+            ],
+            'JSopenParams' => 'height=600,width=800,status=0,menubar=0,scrollbars=1'
+          ]
+        ],
+        'softref' => 'typolink'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     // --- Default TYPO3 columns ---
 
     'uid' => [
@@ -249,7 +277,8 @@ return [
         title, --linebreak--,
         header, --linebreak--,
         abstract, --linebreak--,
-        image
+        image, --linebreak--,
+        link
       ',
       'columnsOverrides' => [
         'header' => [

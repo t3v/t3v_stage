@@ -39,6 +39,13 @@ class Slide extends AbstractModel {
   protected $image;
 
   /**
+   * The slide's link.
+   *
+   * @var string
+   */
+  protected $link;
+
+  /**
    * Returns the slide's title.
    *
    * @return string The slide's title
@@ -112,5 +119,24 @@ class Slide extends AbstractModel {
    */
   public function setImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image) {
     $this->image = $image;
+  }
+
+  /**
+   * Returns the slide's link.
+   *
+   * @return string The slide's link
+   */
+  public function getLink() {
+    return $this->link;
+  }
+
+  /**
+   * Sets the slide's link.
+   *
+   * @param string $link The slide's link
+   * @return void
+   */
+  public function setLink($link) {
+    $this->link = $link;
   }
 }

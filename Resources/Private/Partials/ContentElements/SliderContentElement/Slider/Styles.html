@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:asset.style name="t3v-stage-slider-{data.uid}-css" movable="0" standalone="1" fluid="1">
+    <f:for each="{slides}" as="slide" iteration="i">
+      <f:if condition="{slide.image}">
+        <f:if condition="{settings.layout} == large">
+          <f:then>
+            .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="290c" treatIdAsReference="1" />'); }
+
+            @media (min-width: 768px) { .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="580c" treatIdAsReference="1" />'); } }
+          </f:then>
+
+          <f:else>
+            .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="414c" treatIdAsReference="1" />'); }
+
+            @media (min-width: 768px) { .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="828c" treatIdAsReference="1" />'); } }
+          </f:else>
+        </f:if>
+      </f:if>
+    </f:for>
+  </v:asset.style>
+</html>

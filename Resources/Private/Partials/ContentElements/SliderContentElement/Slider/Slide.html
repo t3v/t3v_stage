@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:tag name="div" class="t3v-stage-slide--{slide.uid} t3v-stage-slide slide" hideIfEmpty="true">
+    <v:tag name="div" class="t3v-stage-slide__container container" hideIfEmpty="true">
+      <v:tag name="div" class="t3v-stage-slide__content" hideIfEmpty="true">
+        <f:if condition="{slide.header}">
+          <div class="t3v-stage-slide__header">
+            <f:format.html>{slide.header}</f:format.html>
+          </div>
+        </f:if>
+
+        <f:if condition="{slide.abstract}">
+          <div class="t3v-stage-slide__abstract">
+            <f:format.html>{slide.abstract}</f:format.html>
+          </div>
+        </f:if>
+      </v:tag>
+    </v:tag>
+  </v:tag>
+</html>
