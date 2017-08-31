@@ -61,7 +61,7 @@ Credits
 * [Image free icon]
 * [Background free icon]
 
-Icons made by [Freepik] from [Flaticon] is licensed by [CC 3.0 BY].
+Icons made by [Freepik] from [Flaticon] are licensed by [CC 3.0 BY].
 
 License
 -------
