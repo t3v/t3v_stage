@@ -12,10 +12,6 @@
         <source>Settings</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
-        <source>Slides</source>
-      </trans-unit>
-
       <trans-unit id="contentElements.sliderContentElement.settings.layout.label">
         <source>Layout</source>
       </trans-unit>
@@ -38,6 +34,10 @@
 
       <trans-unit id="contentElements.sliderContentElement.settings.layout.custom.label">
         <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
+        <source>Slides</source>
       </trans-unit>
     </body>
   </file>

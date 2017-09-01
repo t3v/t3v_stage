@@ -13,11 +13,6 @@
         <target>Einstellungen</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
-        <source>Slides</source>
-        <target>Slides</target>
-      </trans-unit>
-
       <trans-unit id="contentElements.sliderContentElement.settings.layout.label">
         <source>Layout</source>
         <target>Layout</target>
@@ -46,6 +41,11 @@
       <trans-unit id="contentElements.sliderContentElement.settings.layout.custom.label">
         <source>Custom</source>
         <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
+        <source>Slides</source>
+        <target>Slides</target>
       </trans-unit>
     </body>
   </file>
