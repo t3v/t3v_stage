@@ -13,6 +13,11 @@
         <target>Einstellungen</target>
       </trans-unit>
 
+      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
+        <source>Slides</source>
+        <target>Slides</target>
+      </trans-unit>
+
       <trans-unit id="contentElements.sliderContentElement.settings.layout.label">
         <source>Layout</source>
         <target>Layout</target>
@@ -43,9 +48,34 @@
         <target>Benutzerdefiniert</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
-        <source>Slides</source>
-        <target>Slides</target>
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.title">
+        <source>Responsive</source>
+        <target>Responsive</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.title">
+        <source>Breakpoint</source>
+        <target>Breakpoint</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.items.item.minWidth.label">
+        <source>Minimum Width in px</source>
+        <target>Mindestbreite in px</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.imageHeight.label">
+        <source>Image Height in px</source>
+        <target>Bildhöhe in px</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.imageWidth.label">
+        <source>Image Width in px</source>
+        <target>Bildbreite in px</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label">
+        <source>Retina Display</source>
+        <target>Hochauflösendes Display</target>
       </trans-unit>
     </body>
   </file>

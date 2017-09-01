@@ -12,6 +12,10 @@
         <source>Settings</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
+        <source>Slides</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.sliderContentElement.settings.layout.label">
         <source>Layout</source>
       </trans-unit>
@@ -36,8 +40,28 @@
         <source>Custom</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
-        <source>Slides</source>
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.title">
+        <source>Responsive</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.title">
+        <source>Breakpoint</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.items.item.minWidth.label">
+        <source>Minimum Width in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.imageHeight.label">
+        <source>Image Height in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.imageWidth.label">
+        <source>Image Width in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label">
+        <source>Retina Display</source>
       </trans-unit>
     </body>
   </file>

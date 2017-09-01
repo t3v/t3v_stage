@@ -13,6 +13,32 @@
         </TCEforms>
         <type>array</type>
         <el>
+          <settings.slides>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.slides.label</label>
+              <config type="array">
+                <type>inline</type>
+                <foreign_table>tx_t3vstage_domain_model_slide</foreign_table>
+                <minitems>1</minitems>
+                <maxitems>10</maxitems>
+                <appearance type="array">
+                  <expandSingle>0</expandSingle>
+                  <levelLinksPosition>top</levelLinksPosition>
+                  <showSynchronizationLink>0</showSynchronizationLink>
+                  <showAllLocalizationLink>0</showAllLocalizationLink>
+                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
+                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
+                </appearance>
+                <behaviour type="array">
+                  <localizationMode>select</localizationMode>
+                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
+                  <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
+                  <enableCascadingDelete>1</enableCascadingDelete>
+                </behaviour>
+              </config>
+            </TCEforms>
+          </settings.slides>
+
           <settings.layout>
             <TCEforms type="array">
               <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.label</label>
@@ -51,31 +77,65 @@
             </TCEforms>
           </settings.layout>
 
-          <settings.slides>
-            <TCEforms type="array">
-              <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.slides.label</label>
-              <config type="array">
-                <type>inline</type>
-                <foreign_table>tx_t3vstage_domain_model_slide</foreign_table>
-                <minitems>1</minitems>
-                <maxitems>10</maxitems>
-                <appearance type="array">
-                  <expandSingle>0</expandSingle>
-                  <levelLinksPosition>top</levelLinksPosition>
-                  <showSynchronizationLink>0</showSynchronizationLink>
-                  <showAllLocalizationLink>0</showAllLocalizationLink>
-                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
-                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
-                </appearance>
-                <behaviour type="array">
-                  <localizationMode>select</localizationMode>
-                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
-                  <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
-                  <enableCascadingDelete>1</enableCascadingDelete>
-                </behaviour>
-              </config>
-            </TCEforms>
-          </settings.slides>
+          <settings.responsive>
+            <title>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.title</title>
+            <type>array</type>
+            <section>1</section>
+            <el>
+              <breakpoint>
+                <title>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.title</title>
+                <type>array</type>
+                <section>1</section>
+                <el>
+                  <minWidth>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.items.item.minWidth.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim, required</eval>
+                      </config>
+                    </TCEforms>
+                  </minWidth>
+
+                  <imageHeight>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.imageHeight.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim</eval>
+                      </config>
+                    </TCEforms>
+                  </imageHeight>
+
+                  <imageWidth>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.imageWidth.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim</eval>
+                      </config>
+                    </TCEforms>
+                  </imageWidth>
+
+                  <retinaDisplay>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label</label>
+                      <config type="array">
+                        <type>check</type>
+                        <default>1</default>
+                      </config>
+                    </TCEforms>
+                  </retinaDisplay>
+                </el>
+              </breakpoint>
+            </el>
+          </settings.responsive>
         </el>
       </ROOT>
     </sDEF>

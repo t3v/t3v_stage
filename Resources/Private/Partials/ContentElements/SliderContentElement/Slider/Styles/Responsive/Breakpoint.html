@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:if condition="{breakpoint.minWidth} == 0">
+    <f:then>
+      .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="{breakpoint.imageHeight}c" width="{breakpoint.imageWidth}c" treatIdAsReference="1" />'); }
+
+      <f:if condition="{breakpoint.retinaDisplay}">
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="{breakpoint.imageHeight * 2}c" width="{breakpoint.imageWidth * 2}c" treatIdAsReference="1" />'); } }
+      </f:if>
+    </f:then>
+
+    <f:else>
+      @media (min-width: {breakpoint.minWidth}px) { .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="{breakpoint.imageHeight}c" width="{breakpoint.imageWidth}c" treatIdAsReference="1" />'); } }
+
+      <f:if condition="{breakpoint.retinaDisplay}">
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .t3v-stage-slide--{slide.uid} { background-image: url('<v:uri.image src="{slide.image.uid}" height="{breakpoint.imageHeight * 2}c" width="{breakpoint.imageWidth * 2}c" treatIdAsReference="1" />'); } }
+      </f:if>
+    </f:else>
+  </f:if>
+</html>
