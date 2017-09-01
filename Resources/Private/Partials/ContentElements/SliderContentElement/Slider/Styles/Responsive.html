@@ -1,13 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:asset.style name="t3v-stage-slider-{data.uid}-css" movable="0" standalone="1" fluid="1">
     <f:for each="{slides}" as="slide" iteration="i">
-      <f:if condition="{slide.image}">
-        <f:for each="{settings.responsive}" as="entry">
-          <v:variable.set name="breakpoint" value="{entry.breakpoint}" />
+      <f:for each="{settings.responsive}" as="entry">
+        <v:variable.set name="breakpoint" value="{entry.breakpoint}" />
 
-          <f:render partial="ContentElements/SliderContentElement/Slider/Styles/Responsive/Breakpoint" arguments="{slide: slide, breakpoint: breakpoint}" />
-        </f:for>
-      </f:if>
+        <f:render partial="ContentElements/SliderContentElement/Slider/Styles/Responsive/Breakpoint" arguments="{slide: slide, breakpoint: breakpoint}" />
+      </f:for>
     </f:for>
   </v:asset.style>
 </html>
