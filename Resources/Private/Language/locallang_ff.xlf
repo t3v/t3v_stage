@@ -8,10 +8,6 @@
 
       <!-- Slider Content Element -->
 
-      <trans-unit id="contentElements.sliderContentElement.settings.sheetTitle">
-        <source>Settings</source>
-      </trans-unit>
-
       <trans-unit id="contentElements.sliderContentElement.settings.slides.label">
         <source>Slides</source>
       </trans-unit>
@@ -62,6 +58,16 @@
 
       <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label">
         <source>Retina Display</source>
+      </trans-unit>
+
+      <!-- Shared -->
+
+      <trans-unit id="contentElements.shared.sheets.general.title">
+        <source>General</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.shared.sheets.appearance.title">
+        <source>Appearance</source>
       </trans-unit>
     </body>
   </file>
