@@ -4,11 +4,11 @@
       <f:for each="{slides}" as="slide">
         <f:if condition="{slide.link}">
           <f:then>
-            <f:render partial="ContentElements/SliderContentElement/Slider/Slide/AsLink" arguments="{slide: slide, settings: settings}" />
+            <f:render partial="ContentElements/SliderContentElement/Slide/AsLink" arguments="{slide: slide, settings: settings}" />
           </f:then>
 
           <f:else>
-            <f:render partial="ContentElements/SliderContentElement/Slider/Slide" arguments="{slide: slide, settings: settings}" />
+            <f:render partial="ContentElements/SliderContentElement/Slide/Default" arguments="{slide: slide, settings: settings}" />
           </f:else>
         </f:if>
       </f:for>
