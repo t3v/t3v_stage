@@ -6,7 +6,10 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Fixed TSconfig
+* Fixed translations
 * Updated FlexForms
+* Updated Travis CI and AppVeyor configuration
 
 1.0.0
 -----
