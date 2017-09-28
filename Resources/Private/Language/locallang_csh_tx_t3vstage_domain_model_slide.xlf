@@ -8,12 +8,12 @@
         <source>Title</source>
       </trans-unit>
 
-      <trans-unit id="header.description">
-        <source>Header</source>
-      </trans-unit>
-
       <trans-unit id="abstract.description">
         <source>Abstract</source>
+      </trans-unit>
+
+      <trans-unit id="text.description">
+        <source>Text</source>
       </trans-unit>
 
       <trans-unit id="image.description">

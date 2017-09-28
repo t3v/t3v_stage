@@ -23,19 +23,20 @@ return [
       'exclude' => true
     ],
 
-    'header' => [
-      'label' => $lll . 'tx_t3vstage_domain_model_slide.header',
+    'abstract' => [
+      'label' => $lll . 'tx_t3vstage_domain_model_slide.abstract',
       'config' => [
-        'type' => 'text',
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
         'eval' => 'trim'
       ],
-      'defaultExtras' => 'richtext[]',
       'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
-    'abstract' => [
-      'label' => $lll . 'tx_t3vstage_domain_model_slide.abstract',
+    'text' => [
+      'label' => $lll . 'tx_t3vstage_domain_model_slide.text',
       'config' => [
         'type' => 'text',
         'eval' => 'trim'
@@ -245,7 +246,7 @@ return [
       'starttime' => 'starttime',
       'endtime' => 'endtime'
     ],
-    'searchFields' => 'title, header, abstract',
+    'searchFields' => 'title, abstract, text',
     'versioningWS' => true,
     'hideTable' => false
   ],
@@ -275,16 +276,13 @@ return [
     'generalPalette' => [
       'showitem' => '
         title, --linebreak--,
-        header, --linebreak--,
         abstract, --linebreak--,
+        text, --linebreak--,
         image, --linebreak--,
         link
       ',
       'columnsOverrides' => [
-        'header' => [
-          'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]'
-        ],
-        'abstract' => [
+        'text' => [
           'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]'
         ]
       ],

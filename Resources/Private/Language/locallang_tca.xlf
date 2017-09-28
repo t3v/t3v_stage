@@ -16,12 +16,12 @@
         <source>Title</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vstage_domain_model_slide.header">
-        <source>Header</source>
-      </trans-unit>
-
       <trans-unit id="tx_t3vstage_domain_model_slide.abstract">
         <source>Abstract</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.text">
+        <source>Text</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vstage_domain_model_slide.image">

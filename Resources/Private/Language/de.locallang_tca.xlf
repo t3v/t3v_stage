@@ -18,14 +18,14 @@
         <target>Titel</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vstage_domain_model_slide.header">
-        <source>Header</source>
-        <target>Kopfzeile</target>
-      </trans-unit>
-
       <trans-unit id="tx_t3vstage_domain_model_slide.abstract">
         <source>Abstract</source>
         <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.text">
+        <source>Text</source>
+        <target>Text</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vstage_domain_model_slide.image">

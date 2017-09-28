@@ -1,19 +1,18 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <f:if condition="{slide.abstract}">
     <f:then>
-      <f:link.typolink parameter="{slide.link}"
-                       class="t3v-stage-slide--{slide.uid} t3v-stage-slide slide"
-                       title="{slide.title}" additionalAttributes="{data-title: slide.title, data-abstract: slide.abstract}">
+      <div class="t3v-stage-slide--{slide.uid} t3v-stage-slide slide"
+           data-title="{slide.title}"
+           data-abstract="{slide.abstract}">
         <f:render section="Slide" arguments="{slide: slide}" />
-      </f:link.typolink>
+      </div>
     </f:then>
 
     <f:else>
-      <f:link.typolink parameter="{slide.link}"
-                       class="t3v-stage-slide--{slide.uid} t3v-stage-slide slide"
-                       title="{slide.title}" additionalAttributes="{data-title: slide.title}">
+      <div class="t3v-stage-slide--{slide.uid} t3v-stage-slide slide"
+           data-title="{slide.title}">
         <f:render section="Slide" arguments="{slide: slide}" />
-      </f:link.typolink>
+      </div>
     </f:else>
   </f:if>
 

@@ -18,18 +18,18 @@ class Slide extends AbstractModel {
   protected $title;
 
   /**
-   * The slide's header.
-   *
-   * @var string
-   */
-  protected $header;
-
-  /**
    * The slide's abstract.
    *
    * @var string
    */
   protected $abstract;
+
+  /**
+   * The slide's text.
+   *
+   * @var string
+   */
+  protected $text;
 
   /**
    * The slide's image.
@@ -65,25 +65,6 @@ class Slide extends AbstractModel {
   }
 
   /**
-   * Returns the slide's header.
-   *
-   * @return string The slide's header
-   */
-  public function getHeader() {
-    return $this->header;
-  }
-
-  /**
-   * Sets the slide's header.
-   *
-   * @param string $header The slide's header
-   * @return void
-   */
-  public function setHeader($header) {
-    $this->header = $header;
-  }
-
-  /**
    * Returns the slide's abstract.
    *
    * @return string The slide's abstract
@@ -100,6 +81,25 @@ class Slide extends AbstractModel {
    */
   public function setAbstract($abstract) {
     $this->abstract = $abstract;
+  }
+
+  /**
+   * Returns the slide's text.
+   *
+   * @return string The slide's text
+   */
+  public function getText() {
+    return $this->text;
+  }
+
+  /**
+   * Sets the slide's text.
+   *
+   * @param string $text The slide's text
+   * @return void
+   */
+  public function setText($text) {
+    $this->text = $text;
   }
 
   /**

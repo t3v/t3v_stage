@@ -9,14 +9,14 @@
         <target>Titel</target>
       </trans-unit>
 
-      <trans-unit id="header.description">
-        <source>Header</source>
-        <target>Kopfzeile</target>
-      </trans-unit>
-
       <trans-unit id="abstract.description">
         <source>Abstract</source>
         <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="text.description">
+        <source>Text</source>
+        <target>Text</target>
       </trans-unit>
 
       <trans-unit id="image.description">
