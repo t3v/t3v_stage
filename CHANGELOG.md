@@ -11,6 +11,7 @@ Unreleased
 * Fixed TSconfig
 * Fixed translations
 * Updated FlexForms
+* Updated icons
 * Updated Travis CI and AppVeyor configuration
 
 1.0.0
