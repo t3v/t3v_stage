@@ -6,7 +6,7 @@
     <body>
       <!-- === Models === -->
 
-      <!-- Slide -->
+      <!-- Slide Model -->
 
       <trans-unit id="tx_t3vstage_domain_model_slide">
         <source>Slide</source>
