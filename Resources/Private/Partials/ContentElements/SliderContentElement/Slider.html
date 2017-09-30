@@ -2,15 +2,7 @@
   <f:if condition="{slides}">
     <v:tag name="div" class="t3v-stage-slider t3v-stage-slider--{settings.layout} slider" hideIfEmpty="true">
       <f:for each="{slides}" as="slide">
-        <f:if condition="{slide.link}">
-          <f:then>
-            <f:render partial="ContentElements/SliderContentElement/Slide/AsLink" arguments="{slide: slide, settings: settings}" />
-          </f:then>
-
-          <f:else>
-            <f:render partial="ContentElements/SliderContentElement/Slide/AsElement" arguments="{slide: slide, settings: settings}" />
-          </f:else>
-        </f:if>
+        <f:render partial="ContentElements/SliderContentElement/Slide" arguments="{slide: slide, settings: settings}" />
       </f:for>
     </v:tag>
 
