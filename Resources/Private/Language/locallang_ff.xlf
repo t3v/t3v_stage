@@ -36,6 +36,30 @@
         <source>Custom</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.sliderContentElement.settings.container.label">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.container.none.label">
+        <source>None</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.container.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.container.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.container.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.container.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.sliderContentElement.settings.responsive.title">
         <source>Responsive</source>
       </trans-unit>
@@ -58,6 +82,22 @@
 
       <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label">
         <source>Retina Display</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label">
+        <source>Non-Retina</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
+        <source>2X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
+        <source>3X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
+        <source>4X</source>
       </trans-unit>
 
       <!-- Shared -->
