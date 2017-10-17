@@ -54,6 +54,7 @@
               <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.label</label>
               <config type="array">
                 <type>select</type>
+                <renderType>selectSingle</renderType>
                 <size>1</size>
                 <minitems>1</minitems>
                 <maxitems>1</maxitems>
@@ -92,6 +93,7 @@
               <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.container.label</label>
               <config type="array">
                 <type>select</type>
+                <renderType>selectSingle</renderType>
                 <size>1</size>
                 <minitems>1</minitems>
                 <maxitems>1</maxitems>
@@ -176,6 +178,7 @@
                       <label>LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label</label>
                       <config type="array">
                         <type>select</type>
+                        <renderType>selectSingle</renderType>
                         <size>1</size>
                         <minitems>1</minitems>
                         <maxitems>1</maxitems>
