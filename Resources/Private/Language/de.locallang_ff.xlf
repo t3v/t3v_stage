@@ -103,7 +103,7 @@
         <target>Hochauflösendes Display</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label">
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.none.label">
         <source>Non-Retina</source>
         <target>Nicht-Retina</target>
       </trans-unit>
