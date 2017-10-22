@@ -83,7 +83,7 @@
         <target>Breakpoint</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.sliderContentElement.settings.items.item.minWidth.label">
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.minWidth.label">
         <source>Minimum Width in px</source>
         <target>Mindestbreite in px</target>
       </trans-unit>

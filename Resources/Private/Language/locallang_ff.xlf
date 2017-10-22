@@ -68,7 +68,7 @@
         <source>Breakpoint</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.sliderContentElement.settings.items.item.minWidth.label">
+      <trans-unit id="contentElements.sliderContentElement.settings.responsive.breakpoint.minWidth.label">
         <source>Minimum Width in px</source>
       </trans-unit>
 
