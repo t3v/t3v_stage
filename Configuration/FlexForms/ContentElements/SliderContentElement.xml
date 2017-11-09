@@ -67,9 +67,6 @@
               <config type="array">
                 <type>select</type>
                 <renderType>selectSingle</renderType>
-                <size>1</size>
-                <minitems>1</minitems>
-                <maxitems>1</maxitems>
                 <items type="array">
                   <numIndex index="0" type="array">
                     <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.layout.default.label</numIndex>
@@ -96,6 +93,9 @@
                     <numIndex index="1">custom</numIndex>
                   </numIndex>
                 </items>
+                <size>1</size>
+                <minitems>1</minitems>
+                <maxitems>1</maxitems>
               </config>
             </TCEforms>
           </settings.layout>
@@ -106,9 +106,6 @@
               <config type="array">
                 <type>select</type>
                 <renderType>selectSingle</renderType>
-                <size>1</size>
-                <minitems>1</minitems>
-                <maxitems>1</maxitems>
                 <items type="array">
                   <numIndex index="0" type="array">
                     <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.container.none.label</numIndex>
@@ -135,6 +132,9 @@
                     <numIndex index="1">custom</numIndex>
                   </numIndex>
                 </items>
+                <size>1</size>
+                <minitems>1</minitems>
+                <maxitems>1</maxitems>
               </config>
             </TCEforms>
           </settings.container>
@@ -191,9 +191,6 @@
                       <config type="array">
                         <type>select</type>
                         <renderType>selectSingle</renderType>
-                        <size>1</size>
-                        <minitems>1</minitems>
-                        <maxitems>1</maxitems>
                         <items type="array">
                           <numIndex index="0" type="array">
                             <numIndex index="0">LLL:EXT:t3v_stage/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label</numIndex>
@@ -215,6 +212,9 @@
                             <numIndex index="1">4X</numIndex>
                           </numIndex>
                         </items>
+                        <size>1</size>
+                        <minitems>1</minitems>
+                        <maxitems>1</maxitems>
                       </config>
                     </TCEforms>
                   </retinaDisplay>
