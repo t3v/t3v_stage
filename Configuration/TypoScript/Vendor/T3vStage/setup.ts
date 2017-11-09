@@ -1,14 +1,10 @@
-# === T3v Stage Configuration ===
+# ---------------------------
+# | T3v Stage Configuration |
+# ---------------------------
 
 plugin {
   tx_t3vstage {
     persistence {
-      enableAutomaticCacheClearing = 1
-
-      updateReferenceIndex = 1
-
-      # storagePid = {$plugin.tx_t3vstage.persistence.storagePid}
-
       classes {
         T3v\T3vStage\Domain\Model\Slide {
           mapping {
@@ -21,18 +17,30 @@ plugin {
           }
         }
       }
-    }
 
-    view {
-      layoutRootPath = {$plugin.tx_t3vstage.view.layoutRootPath}
+      enableAutomaticCacheClearing = {$plugin.tx_t3vstage.persistence.enableAutomaticCacheClearing}
 
-      templateRootPath = {$plugin.tx_t3vstage.view.templateRootPath}
+      storagePid = {$plugin.tx_t3vstage.persistence.storagePid}
 
-      partialRootPath = {$plugin.tx_t3vstage.view.partialRootPath}
+      updateReferenceIndex = {$plugin.tx_t3vstage.persistence.updateReferenceIndex}
     }
 
     settings {
       # ...
+    }
+
+    view {
+      layoutRootPaths {
+        0 = {$plugin.tx_t3vstage.view.layoutRootPath}
+      }
+
+      templateRootPaths {
+        0 = {$plugin.tx_t3vstage.view.templateRootPath}
+      }
+
+      partialRootPaths {
+        0 = {$plugin.tx_t3vstage.view.partialRootPath}
+      }
     }
   }
 }
