@@ -19,15 +19,27 @@
               <config type="array">
                 <type>inline</type>
                 <foreign_table>tx_t3vstage_domain_model_slide</foreign_table>
+                <foreign_sortby>sorting</foreign_sortby>
                 <minitems>1</minitems>
                 <maxitems>10</maxitems>
                 <appearance type="array">
-                  <expandSingle>0</expandSingle>
+                  <enabledControls>
+                    <info>1</info>
+                    <new>1</new>
+                    <dragdrop>1</dragdrop>
+                    <sort>1</sort>
+                    <hide>1</hide>
+                    <delete>1</delete>
+                    <localize>1</localize>
+                  </enabledControls>
+                  <collapseAll>1</collapseAll>
+                  <expandSingle>1</expandSingle>
                   <levelLinksPosition>top</levelLinksPosition>
-                  <showSynchronizationLink>0</showSynchronizationLink>
                   <showAllLocalizationLink>0</showAllLocalizationLink>
                   <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
                   <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
+                  <showSynchronizationLink>0</showSynchronizationLink>
+                  <useSortable>1</useSortable>
                 </appearance>
                 <behaviour type="array">
                   <localizationMode>select</localizationMode>
