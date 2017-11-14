@@ -12,8 +12,9 @@ Unreleased
 * Merged Extensions and Vendor TypoScript
 * Refactored partials
 * Updated icons
-* Updated dependencies
 * Updated AppVeyor configuration
+* Updated dependencies
+* Dropped support for PHP 5.x
 
 1.1.0
 -----
