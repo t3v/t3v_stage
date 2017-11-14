@@ -2,6 +2,19 @@
 # | T3v Stage Constants |
 # -----------------------
 
+t3v {
+  stage {
+    config {
+      contentElements {
+        sliderContentElement {
+          # cat=t3v/stage/config/contentElements/sliderContentElement; type=string; label=The Content Element's container
+          container =
+        }
+      }
+    }
+  }
+}
+
 # === Plugin Constants ===
 
 plugin {
@@ -33,3 +46,7 @@ plugin {
     }
   }
 }
+
+# === Includes ===
+
+<INCLUDE_TYPOSCRIPT: source="FILE: ./Library/constants.ts">
