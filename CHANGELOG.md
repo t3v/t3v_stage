@@ -3,13 +3,14 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.0.0
+-----
 
+* Refactored TypoScript
 * Updated constants and configuration
+* Merged Extensions and Vendor TypoScript
 * Specified missing `renderType` (select fields)
 * Updated FlexForms, layouts, templates and partials
-* Merged Extensions and Vendor TypoScript
 * Refactored partials
 * Updated icons
 * Updated AppVeyor configuration
@@ -30,6 +31,7 @@ Unreleased
 1.0.0
 -----
 
+* First release
 * Implemented configurable image resize
 * Implemented `Slider` Content Element
 * Implemented `Slide` Model
