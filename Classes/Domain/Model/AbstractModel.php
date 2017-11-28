@@ -45,9 +45,9 @@ abstract class AbstractModel extends AbstractEntity {
   protected function getLabelsByLanguageKey($localizations, $languageKey) {
     $labels = [];
 
-    if (empty($localizations[$languageKey]) === false) {
+    if (!empty($localizations[$languageKey])) {
       $labels = $localizations[$languageKey];
-    } elseif (empty($localizations['default']) === false) {
+    } elseif (!empty($localizations['default'])) {
       $labels = $localizations['default'];
     }
 
@@ -61,7 +61,7 @@ abstract class AbstractModel extends AbstractEntity {
    * @return array The labels
    */
   protected function getLabelsFromTarget($labels) {
-    if (is_array($labels) === true) {
+    if (is_array($labels)) {
       foreach ($labels as $labelKey => $label) {
         $labels[$labelKey] = $label[0]['target'];
       }

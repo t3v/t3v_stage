@@ -51,7 +51,11 @@ class SliderContentElementController extends ContentElementController {
     $slidesUids = GeneralUtility::intExplode(',', $settings['slides'], true);
 
     foreach($slidesUids as $uid) {
-      $slides[] = $this->slideRepository->findByUid($uid);
+      $slide = $this->slideRepository->findByUid($uid);
+
+      if ($slide) {
+        $slides[] = $slide;
+      }
     }
 
     return $slides;
