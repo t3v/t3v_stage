@@ -32,11 +32,22 @@ class Slide extends AbstractModel {
   protected $text;
 
   /**
-   * The slide's image.
+   * The slide's thumbnails.
    *
-   * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+   * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+   * @lazy
+   * @cascade remove
    */
-  protected $image;
+  protected $thumbnails;
+
+  /**
+   * The slide's images.
+   *
+   * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+   * @lazy
+   * @cascade remove
+   */
+  protected $images;
 
   /**
    * The slide's link.
@@ -44,6 +55,14 @@ class Slide extends AbstractModel {
    * @var string
    */
   protected $link;
+
+  /**
+   * Constructs a new slide.
+   */
+  public function __construct() {
+    $this->thumbnails = new ObjectStorage();
+    $this->images     = new ObjectStorage();
+  }
 
   /**
    * Returns the slide's title.
@@ -103,22 +122,79 @@ class Slide extends AbstractModel {
   }
 
   /**
-   * Returns the slide's image.
+   * Returns all thumbnails belonging to the slide.
    *
-   * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference The slide's image
+   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> The slide's thumbnails
    */
-  public function getImage() {
-    return $this->image;
+  public function getThumbnails() {
+    return $this->thumbnails;
   }
 
   /**
-   * Sets the slide's image.
+   * Adds a thumbnail to the slide.
    *
-   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image The slide's image
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be added
    * @return void
    */
-  public function setImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image) {
-    $this->image = $image;
+  public function addThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+    $this->thumbnails->attach($thumbnail);
+  }
+
+  /**
+   * Removes a thumbnail from slide.
+   *
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be removed
+   * @return void
+   */
+  public function removeThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+    $this->thumbnails->detach($thumbnail);
+  }
+
+  /**
+   * Removes all thumbnails from the slide.
+   *
+   * @return void
+   */
+  public function removeAllThumbnails() {
+    $this->thumbnails = new ObjectStorage();
+  }
+
+  /**
+   * Returns all images belonging to the slide.
+   *
+   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> The slide's images
+   */
+  public function getImages() {
+    return $this->images;
+  }
+
+  /**
+   * Adds a image to the slide.
+   *
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image The image to be added
+   * @return void
+   */
+  public function addImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image) {
+    $this->images->attach($image);
+  }
+
+  /**
+   * Removes a image from slide.
+   *
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image The image to be removed
+   * @return void
+   */
+  public function removeImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image) {
+    $this->images->detach($image);
+  }
+
+  /**
+   * Removes all images from the slide.
+   *
+   * @return void
+   */
+  public function removeAllImages() {
+    $this->images = new ObjectStorage();
   }
 
   /**

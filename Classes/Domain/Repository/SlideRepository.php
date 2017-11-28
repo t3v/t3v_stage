@@ -17,6 +17,7 @@ class SlideRepository extends AbstractRepository {
    * @var array
    */
   protected $defaultOrderings = [
+    'title'   => QueryInterface::ORDER_DESCENDING,
     'sorting' => QueryInterface::ORDER_ASCENDING
   ];
 }

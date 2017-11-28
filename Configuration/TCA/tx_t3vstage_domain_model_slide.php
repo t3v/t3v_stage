@@ -46,13 +46,13 @@ return [
       'exclude' => true
     ],
 
-    'image' => [
-      'label' => $lll . 'tx_t3vstage_domain_model_slide.image',
+    'thumbnails' => [
+      'label' => $lll . 'tx_t3vstage_domain_model_slide.thumbnails',
       'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
         'image',
         [
           'foreign_match_fields' => [
-            'fieldname' => 'image',
+            'fieldname' => 'thumbnails',
             'tablenames' => 'tx_t3vstage_domain_model_slide',
             'table_local' => 'sys_file'
           ],
@@ -64,7 +64,37 @@ return [
             ]
           ],
           'minitems' => 0,
-          'maxitems' => 1,
+          'maxitems' => 2,
+          'appearance' => [
+            'showAllLocalizationLink' => true,
+            'showSynchronizationLink' => true
+          ]
+        ],
+        $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
+      ),
+      'l10n_mode' => 'exclude',
+      'exclude' => true
+    ],
+
+    'images' => [
+      'label' => $lll . 'tx_t3vstage_domain_model_slide.images',
+      'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+        'image',
+        [
+          'foreign_match_fields' => [
+            'fieldname' => 'images',
+            'tablenames' => 'tx_t3vstage_domain_model_slide',
+            'table_local' => 'sys_file'
+          ],
+          'foreign_types' => [
+            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+              'showitem' => '--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
+                             --palette--;;imageoverlayPalette,
+                             --palette--;;filePalette'
+            ]
+          ],
+          'minitems' => 0,
+          'maxitems' => 10,
           'appearance' => [
             'showAllLocalizationLink' => true,
             'showSynchronizationLink' => true
@@ -196,7 +226,7 @@ return [
         ],
         'default' => 0
       ],
-      'exclude' => 1
+      'exclude' => true
     ],
 
     'l10n_parent' => [
@@ -211,7 +241,7 @@ return [
         'foreign_table_where' => 'AND tx_t3vstage_domain_model_slide.pid=###CURRENT_PID### AND tx_t3vstage_domain_model_slide.sys_language_uid IN (-1,0)'
       ],
       'displayCond' => 'FIELD:sys_language_uid:>:0',
-      'exclude' => 1
+      'exclude' => true
     ],
 
     'l10n_diffsource' => [
@@ -278,7 +308,8 @@ return [
         title, --linebreak--,
         abstract, --linebreak--,
         text, --linebreak--,
-        image, --linebreak--,
+        thumbnails, --linebreak--,
+        images, --linebreak--,
         link
       ',
       'columnsOverrides' => [

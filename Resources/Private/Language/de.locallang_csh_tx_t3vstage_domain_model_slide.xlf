@@ -19,9 +19,14 @@
         <target>Text</target>
       </trans-unit>
 
-      <trans-unit id="image.description">
-        <source>Image</source>
-        <target>Bild</target>
+      <trans-unit id="thumbnails.description">
+        <source>Thumbnails</source>
+        <target>Vorschaubilder</target>
+      </trans-unit>
+
+      <trans-unit id="images.description">
+        <source>Images</source>
+        <target>Bilder</target>
       </trans-unit>
 
       <trans-unit id="link.description">

@@ -16,8 +16,12 @@
         <source>Text</source>
       </trans-unit>
 
-      <trans-unit id="image.description">
-        <source>Image</source>
+      <trans-unit id="thumbnails.description">
+        <source>Thumbnails</source>
+      </trans-unit>
+
+      <trans-unit id="images.description">
+        <source>Images</source>
       </trans-unit>
 
       <trans-unit id="link.description">

@@ -24,8 +24,12 @@
         <source>Text</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vstage_domain_model_slide.image">
-        <source>Image</source>
+      <trans-unit id="tx_t3vstage_domain_model_slide.thumbnails">
+        <source>Thumbnails</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vstage_domain_model_slide.images">
+        <source>Images</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vstage_domain_model_slide.link">
