@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Improved `Slider` Content Element Controller
 * Added `thumbnails` property to `Slide` Model
 * Multiple images per `Slide` Model (breaking change)
 * Updated TypoScript
