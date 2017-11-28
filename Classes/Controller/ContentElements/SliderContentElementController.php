@@ -28,14 +28,13 @@ class SliderContentElementController extends ContentElementController {
    */
   public function indexAction() {
     $settings = $this->settings;
+    $slides   = $this->getSlidesFromSettings($settings);
 
     $responsiveSettings = $settings['responsive'];
 
     if (!empty($responsiveSettings)) {
       $settings['responsive'] = $this->sortResponsiveSettingsByMinWidth($responsiveSettings);
     }
-
-    $slides = $this->getSlidesFromSettings($settings);
 
     $this->view->assign('settings', $settings);
     $this->view->assign('slides', $slides);
