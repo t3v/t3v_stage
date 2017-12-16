@@ -60,6 +60,8 @@ class Slide extends AbstractModel {
    * Constructs a new slide.
    */
   public function __construct() {
+    parent::__construct();
+
     $this->thumbnails = new ObjectStorage();
     $this->images     = new ObjectStorage();
   }

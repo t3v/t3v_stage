@@ -5,6 +5,8 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 use T3v\T3vCore\Domain\Repository\AbstractRepository;
 
+use T3v\T3vStage\Domain\Repository\Traits\LocalizationTrait;
+
 /**
  * Slide Repository Class
  *
@@ -20,4 +22,9 @@ class SlideRepository extends AbstractRepository {
     'title'   => QueryInterface::ORDER_DESCENDING,
     'sorting' => QueryInterface::ORDER_ASCENDING
   ];
+
+  /**
+   * Use the localization trait.
+   */
+  use LocalizationTrait;
 }

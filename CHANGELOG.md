@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Added `LocalizationTrait`
 * Updated `AbstractModel`
 
 3.1.0
