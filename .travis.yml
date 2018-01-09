@@ -17,7 +17,7 @@ before_script:
   - export typo3DatabaseHost="localhost";
   - export typo3DatabaseUsername="root";
   - export typo3DatabasePassword="";
-  - export typo3DatabaseName="t3v_core";
+  - export typo3DatabaseName="t3v_stage";
 
 branches:
   except:
