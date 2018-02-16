@@ -28,7 +28,9 @@ plugin {
     }
 
     settings {
-      # ...
+      extbase {
+        controllerExtensionName = {$plugin.tx_t3vstage.settings.extbase.controllerExtensionName}
+      }
     }
 
     view {
