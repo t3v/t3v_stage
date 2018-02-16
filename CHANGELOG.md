@@ -7,6 +7,7 @@ Unreleased
 ----------
 
 * Updated partials
+* Cleaned up
 
 3.3.0
 -----
